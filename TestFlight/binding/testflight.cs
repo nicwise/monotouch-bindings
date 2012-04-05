@@ -19,6 +19,9 @@ namespace MonoTouch.TestFlight {
 
 		[Static, Export ("takeOff:")]
 		void TakeOff (string teamToken);
+		
+		[Static, Export ("setDeviceIdentifier:")]
+		void SetDeviceIdentifier(string deviceIdentifer);
 
 		// The values that the dictionary accepts:
 		// NSString ("reinstallCrashHandlers") -> NSNumber.Boolean, set to true to reinstall the crash handlers, in case some other library does
